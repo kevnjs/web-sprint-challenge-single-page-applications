@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import HomePage from "./components/HomePage";
 import Header from "./components/Header";
 import Form from "./components/Form";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import schema from "./validation/schema";
 import * as yup from 'yup';
 
@@ -71,17 +71,14 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <Switch>
-
-        <Route path="/pizza">
-          <Form form={formValue} order={orders} change={inputChange} disabled={disabled} submit={formSubmit} errors={errors}/>
-        </Route>
-
-        <Route exact path="/">
-          <HomePage />
-        </Route>
-
-      </Switch>
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route exact path="/pizza">
+            <Form form={formValue} order={orders} change={inputChange} disabled={disabled} submit={formSubmit} errors={errors}/>
+          </Route>
+        </Switch>
     </Router>
   );
 };

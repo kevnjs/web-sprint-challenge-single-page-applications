@@ -3,7 +3,7 @@
 // - [ ] test that you can submit the form
 describe('Connect to Cypress', () => {
     it('Connects to URL', () => {
-        cy.visit('http://localhost:3002');
+        cy.visit('http://localhost:3000');
     })
 })
 
@@ -14,7 +14,7 @@ const sausage = () => cy.get('input[name=sausage]');
 const bacon = () => cy.get('input[name=bacon]');
 const mushroom = () => cy.get('input[name=mushroom]')
 const pizzaBtn = () => cy.get('button[id="order-pizza"]');
-const orderBtn = () => cy.get('button[id="order-button"]')
+const orderBtn = () => cy.get('button[id="order-button"]');
 
 describe('Add text to fields and check boxes', () => {
     it('Inputs name correctly and checks all boxes', () => {
@@ -36,6 +36,4 @@ describe('Add text to fields and check boxes', () => {
     })
 
 })
-
-dec
 

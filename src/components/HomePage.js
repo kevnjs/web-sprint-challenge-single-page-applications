@@ -16,7 +16,7 @@ export default function HomePage () {
             <div className="img" id="image1"></div>
             <div className="img" id="image2">
                 <h2>Your favorite food, delivered while coding</h2>
-                <button onClick={routeToForm} id="order-pizza"><Link>Pizza?</Link></button>
+                <button onClick={routeToForm} id="order-pizza"><Link to="/pizza">Pizza?</Link></button>
             </div>
             <div className="img" id="image3"></div>
         </div>
