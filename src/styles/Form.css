@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+#pizza-form {
+    border: 1px solid black;
+    width: 60%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.inputName {
+    margin: 5px 0;
+}
+
+.toppings {
+    padding: 10px 0;
+}
+.checkboxes {
+    margin-right: 20px;
+}
+#name-input {
+    width: 20em;
+}
+
+#size-dropdown {
+    width: 5em;
+}
+
+#pizza-form textarea {
+    max-width: 50%;
+    height: 10vh;
+    max-height: 30vh;
+}
+
+.sideImg {
+    background-image: url('https://images.unsplash.com/photo-1586208224649-080394976d1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+    width: 30%;
+    height: 80vh;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 2%;
+}
+
+#order-button {
+    margin: 2% 0;
+    max-width: 9em;
+    padding: 1%;
+}
