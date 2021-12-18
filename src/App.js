@@ -60,17 +60,14 @@ const App = () => {
     setFormValue(initialForm);
   }
 
-  useEffect(() => {
+  useEffect( () => {
     schema.isValid(formValue).then(valid => setDisabled(!valid))
   }, [formValue])
 
-  useEffect( () => {
-    console.log(orders);
-  }, [orders])
-
   return (
+
     <Router>
-      <Header />
+        <Header />
         <Switch>
           <Route exact path="/">
             <HomePage />
